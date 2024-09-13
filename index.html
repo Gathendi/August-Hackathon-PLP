@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boniface Gathendi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="Images/Favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="nav">
+        <div class="logo">
+            <a href="#"><img src="Images/Logo White.png" width="250px" alt="Logo" /></a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <nav class="links" id="nav-links">
+            <ul id="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hire_me">
+            <button type="button" class="hire_me_btn">
+                <a href="#">Download CV</a>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="intro_heading">
+                <h1 class="hero_heading">Hi, I'm Gathendi.</h1>
+                <h2>A Web Developer and a Digital Marketer.</h2>
+                <p class="hero_intro">
+                    I'm a passionate Web Developer and Digital Marketer dedicated to crafting beautiful, functional websites that drive results. From responsive designs to seamless user experiences, I help brands grow their online presence with creativity and strategy.
+                </p>
+                <div class="view_project_btn">
+                    <button class="hire_me_btn" type="button">View My Projects</button>
+                    <button class="hire_me_btn" type="button">Contact Me</button>
+                </div>
+            </div>
+            <div class="hero_image"></div>
+        </section>
+
+        <section class="services">
+            <div class="top_services">
+                <span id="my_services">My Services</span>
+                <h2>Crafting Solutions That Work</h2>
+                <p>
+                    With a passion for innovation and a focus on delivering practical, high-quality results, I specialize in creating tailored solutions that address real-world challenges.
+                </p>
+            </div>
+            <div class="service_list">
+                <div class="service_card">
+                    <h2>Web Design</h2>
+                    <p>
+                        Crafting user-centric websites that not only look stunning but perform effortlessly. With a blend of creativity and technical expertise, I design digital experiences that captivate and convert.
+                    </p>
+                </div>
+                <div class="service_card">
+                    <h2>Graphic Design</h2>
+                    <p>
+                        I specialize in crafting visually striking designs that tell your story. From logos to marketing materials, my designs connect your brand with your audience.
+                    </p>
+                </div>
+                <div class="service_card">
+                    <h2>Digital Marketing</h2>
+                    <p>
+                        I offer comprehensive digital marketing strategies that engage, drive traffic, and deliver measurable results—helping your brand rise above the noise.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about_me">
+            <div class="about_me_image"></div>
+            <div class="about_me_text">
+                <span>About Me</span>
+                <h1>More than just visuals. <br>I design solutions that drive results.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dignissimos, corrupti nobis inventore nam voluptatem ea dolorum atque velit sunt temporibus praesentium tempora dolore ut reprehenderit.</p>
+                <div class="button">
+                    <button type="button" class="hire_me_btn">Let's Chat</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <span>Portfolio</span>
+            <h1>My Amazing Works</h1>
+            <div class="nav-bar">
+                <ul class="nav-bar-links">
+                    <li><a href="#">Websites</a></li>
+                    <li><a href="#">Logos</a></li>
+                    <li><a href="#">Posters</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </div>
+            <div class="tabs">
+                <div class="service_card"></div>
+                <div class="service_card"></div>
+                <div class="service_card"></div>
+                <div class="service_card"></div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
